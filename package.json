@@ -41,7 +41,7 @@
         "lint-styles:fix": "stylelint 'src/**/*.{css,scss}' --fix",
         "package": "pnpm run build && electron-builder",
         "package:dev": "pnpm run build && electron-builder --dir",
-        "package:linux": "pnpm run build && electron-builder --linux",
+        "package:linux": "pnpm run build && electron-builder --linux && cp dist/Feishin-linux-x86_64.AppImage ~/Applications/Feishin-linux-x86_64_*.AppImage",
         "package:linux:pr": "pnpm run build && electron-builder --linux --publish never",
         "package:linux-arm64:pr": "pnpm run build && electron-builder --linux --arm64 --publish never",
         "package:mac": "pnpm run build && electron-builder --mac",
