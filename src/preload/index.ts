@@ -1,5 +1,6 @@
 import { contextBridge, webUtils } from 'electron';
 
+import { airplayPlayer, airplayPlayerListener } from './airplay-player';
 import { autodiscover } from './autodiscover';
 import { browser } from './browser';
 import { customThemes } from './custom-themes';
@@ -16,6 +17,8 @@ import { visualizer } from './visualizer';
 
 // Custom APIs for renderer
 const api = {
+    airplayPlayer,
+    airplayPlayerListener,
     autodiscover,
     browser,
     customThemes,

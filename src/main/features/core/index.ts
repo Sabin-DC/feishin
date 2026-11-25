@@ -1,3 +1,4 @@
+import './airplay';
 import './autodiscover';
 import './dlna';
 import './custom-themes';

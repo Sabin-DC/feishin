@@ -11,6 +11,7 @@ import {
 import { IconBaseProps } from 'react-icons';
 import { CgSpinnerTwoAlt } from 'react-icons/cg';
 import {
+    LuAirplay,
     LuAlignCenter,
     LuAlignLeft,
     LuAlignRight,
@@ -231,6 +232,7 @@ const LastfmLogoIcon = forwardRef<HTMLImageElement, LogoImgProps>(
 
 export const AppIcon = {
     add: LuPlus,
+    airplay: LuAirplay,
     album: LuDisc3,
     alignCenter: LuAlignCenter,
     alignLeft: LuAlignLeft,

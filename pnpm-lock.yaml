@@ -11,6 +11,12 @@ importers:
 
   .:
     dependencies:
+      '@apple-protocols/airplay':
+        specifier: 1.0.0-beta.2
+        version: 1.0.0-beta.2
+      '@apple-protocols/devices':
+        specifier: 1.0.0-beta.2
+        version: 1.0.0-beta.2
       '@atlaskit/pragmatic-drag-and-drop':
         specifier: 1.7.7
         version: 1.7.7
@@ -380,6 +386,22 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       ajv: '>=8'
+
+  '@apple-protocols/airplay@1.0.0-beta.2':
+    resolution: {integrity: sha512-jL8CdO5nTfAEySfdIdUcXRoT4SbmKuKjlQuzKXV0tDb9kD7+ZnMtIDUCxHKgyjiYhrBnY/LDqILDrxE5woy2Xw==}
+    engines: {node: ^18.17.0 || >=20.3.0}
+
+  '@apple-protocols/companion-link@1.0.0-beta.2':
+    resolution: {integrity: sha512-72UkfIF6au3CYQB+3GVrs8Gn7A+6jKG7wk72pR8wyUii1t6j4Qmb1U00v+XQcQpOb6dxFQKf4kX2b8crsBw65A==}
+    engines: {node: ^18.17.0 || >=20.3.0}
+
+  '@apple-protocols/core@1.0.0-beta.2':
+    resolution: {integrity: sha512-KTaL2bSbtGdoZF3Sm5b7qt6UXQIU44k5SitXw+mEu/lG68zCgOagU4YxWinbOy7InmUD9EOKjsi0hFRHcylOzg==}
+    engines: {node: ^18.17.0 || >=20.3.0}
+
+  '@apple-protocols/devices@1.0.0-beta.2':
+    resolution: {integrity: sha512-E6jYrOTuBLsefAjLp44IGoxfD9t13p5PwOx7SAHDJPiWjsV+bQGsoN7AsQ6cgysGxbB2jYBpFaLOKKiuKoejlQ==}
+    engines: {node: ^18.17.0 || >=20.3.0}
 
   '@assemblyscript/loader@0.17.14':
     resolution: {integrity: sha512-+PVTOfla/0XMLRTQLJFPg4u40XcdTfon6GGea70hBGi8Pd7ZymIXyVUR+vK8wt5Jb4MVKTKPIz43Myyebw5mZA==}
@@ -4670,6 +4692,7 @@ packages:
   postcss-selector-parser@7.2.0:
     resolution: {integrity: sha512-Khh/tERVBn0I1499dvBSHY0pWJloMJWUxDsOBM0CCDPAcVZ10Jl2L1qy1f19uEX22spa8Mv7DCdEQJc0cGwBhQ==}
     engines: {node: '>=4'}
+    deprecated: Double-escapes CSS Modules class names (#362). Use 7.2.1.
 
   postcss-simple-vars@7.0.1:
     resolution: {integrity: sha512-5GLLXaS8qmzHMOjVxqkk1TZPf1jMqesiI7qLhnlyERalG0sMbHIbJqrcnrpmZdKCLglHnRHoEBB61RtGTsj++A==}
@@ -5977,6 +6000,22 @@ snapshots:
       ajv: 8.20.0
       jsonpointer: 5.0.1
       leven: 3.1.0
+
+  '@apple-protocols/airplay@1.0.0-beta.2':
+    dependencies:
+      '@apple-protocols/core': 1.0.0-beta.2
+
+  '@apple-protocols/companion-link@1.0.0-beta.2':
+    dependencies:
+      '@apple-protocols/core': 1.0.0-beta.2
+
+  '@apple-protocols/core@1.0.0-beta.2': {}
+
+  '@apple-protocols/devices@1.0.0-beta.2':
+    dependencies:
+      '@apple-protocols/airplay': 1.0.0-beta.2
+      '@apple-protocols/companion-link': 1.0.0-beta.2
+      '@apple-protocols/core': 1.0.0-beta.2
 
   '@assemblyscript/loader@0.17.14': {}
 

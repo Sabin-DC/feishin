@@ -45,6 +45,28 @@
             "spotify": "Open in Spotify"
         }
     },
+    "airplay": {
+        "audioOutput": "Audio output",
+        "cancel": "Cancel",
+        "castToDevice": "Cast to AirPlay device",
+        "castingToDevice": "Casting to {{name}}",
+        "connecting": "Connecting…",
+        "errors": {
+            "access-denied": "The device refused the connection. Try pairing again or check its AirPlay access settings",
+            "connect-failed": "Could not connect to the AirPlay device",
+            "decode-failed": "Could not decode this track for AirPlay",
+            "ffmpeg-missing": "AirPlay needs ffmpeg installed and available on your PATH",
+            "pairing-failed": "Could not start pairing. Check that the device is awake and try again",
+            "stream-failed": "Could not start streaming to the AirPlay device"
+        },
+        "noDevicesFound": "No AirPlay devices found",
+        "pair": "Pair",
+        "pinPrompt": "{{name}} needs a PIN. Enter the code shown on its screen. If no code appears, the device only accepts its owner and its AirPlay access setting has to be changed on the device.",
+        "pinWrong": "That PIN was not accepted",
+        "search": "Search",
+        "searching": "Searching…",
+        "thisComputer": "This computer"
+    },
     "common": {
         "countSelected": "{{count}} selected",
         "explicitStatus": "Explicit status",

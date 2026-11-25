@@ -119,7 +119,7 @@ export const AudioSettings = memo(() => {
     const audioDevices = useAudioDevices(playbackType);
     const audioDeviceId =
         playbackType === PlayerType.LOCAL ? settings.mpvAudioDeviceId : settings.audioDeviceId;
-    const isCasting = settings.type === PlayerType.DLNA;
+    const isCasting = settings.type === PlayerType.DLNA || settings.type === PlayerType.AIRPLAY;
 
     // Dynamically build the options for the dropdown
     const selectData = [
@@ -136,7 +136,11 @@ export const AudioSettings = memo(() => {
     }
 
     if (isCasting) {
-        selectData.push({ disabled: true, label: 'DLNA', value: PlayerType.DLNA });
+        selectData.push({
+            disabled: true,
+            label: settings.type === PlayerType.AIRPLAY ? 'AirPlay' : 'DLNA',
+            value: settings.type,
+        });
     }
 
     const audioOptions: SettingOption[] = [

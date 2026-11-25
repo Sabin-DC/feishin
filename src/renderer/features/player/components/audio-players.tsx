@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { eventEmitter } from '/@/renderer/events/event-emitter';
 import { UserFavoriteEventPayload, UserRatingEventPayload } from '/@/renderer/events/events';
 import { DiscordRpcHook } from '/@/renderer/features/discord-rpc/use-discord-rpc';
+import { AirplayPlayer } from '/@/renderer/features/player/audio-player/airplay-player';
 import { DlnaPlayer } from '/@/renderer/features/player/audio-player/dlna-player';
 import { MainPlayerListenerHook } from '/@/renderer/features/player/audio-player/hooks/use-main-player-listener';
 import { JukeboxPlayer } from '/@/renderer/features/player/audio-player/jukebox-player';
@@ -388,6 +389,14 @@ const AudioPlayersContent = ({
         return (
             <ComponentErrorBoundary>
                 {isRadioActive ? <RadioDlnaPlayer /> : <DlnaPlayer />}
+            </ComponentErrorBoundary>
+        );
+    }
+
+    if (playbackType === PlayerType.AIRPLAY) {
+        return (
+            <ComponentErrorBoundary>
+                <AirplayPlayer />
             </ComponentErrorBoundary>
         );
     }

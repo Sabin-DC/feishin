@@ -79,6 +79,8 @@
         "xml2js": "0.5.0"
     },
     "dependencies": {
+        "@apple-protocols/airplay": "1.0.0-beta.2",
+        "@apple-protocols/devices": "1.0.0-beta.2",
         "@atlaskit/pragmatic-drag-and-drop": "1.7.7",
         "@atlaskit/pragmatic-drag-and-drop-auto-scroll": "^2.1.5",
         "@atlaskit/pragmatic-drag-and-drop-hitbox": "^1.2.0",
