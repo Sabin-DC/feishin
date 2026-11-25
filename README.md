@@ -201,6 +201,7 @@ This project is built off of [electron-vite](https://github.com/alex8088/electro
 - `pnpm run package` - Package the project
 - `pnpm run package:dev` - Package the project for development locally
 - `pnpm run package:linux` - Package the project for Linux locally
+- `pnpm run bin` - Build and install the unpacked Linux app in `~/.local/opt/feishin`, with a `~/.local/bin/feishin` command
 - `pnpm run package:mac` - Package the project for Mac locally
 - `pnpm run package:win` - Package the project for Windows locally
 - `pnpm run publish:linux` - Publish the project for Linux
